@@ -10,6 +10,7 @@
     --color-logo: #000;
     --color-border: #ECECEC;
     --color-border-portfolio: #EEEEEE;
+    --color-bg: #C4C4C4;
 }
 
 body {
@@ -145,8 +146,16 @@ img {
 }
 
 .hero-bg {
-    background-color: var(--bg-dark);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg.jpg);
+    max-width: 1600рх;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    background-color: var(--color-bg);
+
 }
+
 .hero-title {
     margin: 0 auto;
     max-width: 696px;
