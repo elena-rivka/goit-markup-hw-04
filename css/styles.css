@@ -11,6 +11,7 @@
     --color-border: #ECECEC;
     --color-border-portfolio: #EEEEEE;
     --color-bg: #C4C4C4;
+    --color-icon: #AFB1B8;
 }
 
 body {
@@ -139,15 +140,34 @@ img {
     color: var(--accent-color);
 }
 
-/* Герой */
-.hero {
-    text-align: center;
-    padding: 200px 200px;
+/* Іконки в навігації */
+.icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    fill: var(--primary-text-color);
 }
 
+.icon-link:hover,
+.icon-link:focus {
+    fill: var(--accent-color);
+}
+
+/* Герой */
+/* .hero {
+    text-align: center;
+    padding: 200px 200px;
+} */
+
 .hero-bg {
+    text-align: center;
+    margin: 0 auto;
+    padding: 200px 200px;
+    max-width: 1600px;
+    height: 600px;
+
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg.jpg);
-    max-width: 1600рх;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -215,6 +235,11 @@ img {
     padding-bottom: 94px;
 } 
 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
     margin-bottom: 50px;
 
@@ -260,6 +285,25 @@ img {
     margin: -1px;
 }
 
+.icon-cont {
+    height: 120px;
+    background-color: var(--bg-bright);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* .item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-color: var(--bg-bright);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}  */
+
 /* Чим ми займаємося */
 .img-case {
     display: flex;
@@ -291,6 +335,7 @@ img {
     background-color: var(--primary-white-color);
 
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }  
 .section-name {
     margin-bottom: 10px;
@@ -304,6 +349,60 @@ img {
 .section-profession {
     font-size: 16px;
     line-height: 1.18;
+}
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
+.soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+}
+
+.soc-link:hover, .soc-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
+
+
+/* Клієнти */
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+}
+
+.clients-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+}
+
+.clients-link:hover, .clients-link:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -346,6 +445,52 @@ img {
     color: var(--accent-color);
 }
 
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}
+
+.footer-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primary-white-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
+
+.footer-cont {
+    display: flex;
+    gap: 70px;
+}
+
+.footer-soc {
+    margin-top: 12px;
+}
 
 /* Стили для portfolio.html */
 /* Хедер */
@@ -374,6 +519,7 @@ img {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons {
     display: flex;
@@ -395,6 +541,10 @@ img {
 
 .cards-item {
     width: calc((100% - 60px) / 3);
+}
+
+.cards-item:hover, .cards-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section-names {
