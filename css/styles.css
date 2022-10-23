@@ -78,7 +78,7 @@ img {
 
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
 
 }
 
@@ -163,7 +163,7 @@ img {
 .hero-bg {
     text-align: center;
     margin: 0 auto;
-    padding: 200px 200px;
+    padding: 200px 0;
     max-width: 1600px;
     height: 600px;
 
@@ -209,7 +209,7 @@ img {
     letter-spacing: 0.06em;
 
 }
-.button:hover {
+.button:hover, .button:focus {
     background-color: var(--accent-color-button);
 }
 
@@ -295,14 +295,6 @@ img {
     justify-content: center;
 }
 
- /* .item::before {
-    content: '';
-    display: block;
-    height: 120px;
-    background-color: var(--bg-bright);
-    border-radius: 4px;
-    margin-bottom: 30px;
-}  */
 
 /* Чим ми займаємося */
 .img-case {
@@ -486,10 +478,7 @@ img {
 .footer-cont {
     display: flex;
     gap: 70px;
-}
-
-.footer-soc {
-    margin-top: 12px;
+    align-items: baseline;
 }
 
 /* Стили для portfolio.html */
@@ -543,7 +532,8 @@ img {
     width: calc((100% - 60px) / 3);
 }
 
-.cards-item:hover, .cards-item:focus {
+.cards-links:hover, .cards-links:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
